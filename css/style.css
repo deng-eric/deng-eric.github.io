@@ -1,0 +1,114 @@
+html, body {
+  height : 100%;
+  padding : 0;
+} 
+
+nav {
+  color:white;
+  background-color : rgba(0,0,0,1);
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .container-fluid {
+    padding-top: 10px;
+}
+
+.invisible {
+  display : none;
+  width : 0px;
+  height : 0px;
+}
+
+.center-text {
+  margin : 0 auto;
+  text-align : center;
+  transition : color 0.5s ease;
+}
+
+.title {
+  color : #BBBBBB;
+  height : 75px;
+}
+
+.icon {
+  width : 25px;
+  height :25px;
+  overflow :hidden;
+  float: left;
+}
+
+.about {
+  color : #BBBBBB;
+  transition : color 0.2s ease;
+}
+
+.projects {
+  color : #BBBBBB;
+  transition : color 0.2s ease;
+}
+
+.contact {
+  color : #BBBBBB;
+  transition : color 0.2s ease;
+}
+
+.icon-title {
+  color : black ; 
+}
+
+.about:hover {
+  color : #FFFFFF;
+}
+
+.projects:hover {
+  color : #FFFFFF;
+}
+
+.contact:hover {
+  color : #FFFFFF;
+}
+
+.icon-title {
+  color : #FFFFFF ; 
+}
+
+.tab-content {
+  margin :10px;
+}
+
+.linkedin:hover {
+  opacity : 0.5;
+}
+
+.github:hover {
+  opacity : 0.5;
+}
+
+.mail:hover {
+  opacity : 0.5;
+}
+
+a {
+  text-decoration : none !important;
+}
+
+td {
+  padding-left : 20px;
+  padding-right : 20px;
+  padding-bottom : 5px;
+}
+
+.social-container {
+  margin: 4px auto;
+  text-align: left;
+}
+
+.contact-info {
+  padding : 5px;
+}
+
+
