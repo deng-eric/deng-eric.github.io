@@ -1,64 +1,87 @@
 <!DOCTYPE html>
-
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Eric Deng</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <title>Eric Deng</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- bootstrap + stylesheets -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!-- scripts and libraries -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
 
-<body>
-  
-  <header class="container-fluid title">
-    <h1>eric deng</h1>
-  </header>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
 
-  <nav class="navbar" data-spy="affix" data-offset-top="75">  
-    <ul class="nav navbar-nav" >
-      <li ><a class="about" href="#about" data-toggle="tab">about</a></li>
-      <li ><a class="projects" href="#projects" data-toggle="tab">projects</a></li>
-      <li ><a class="contact" href="#contact" data-toggle="tab">contact</a></li>
-    </ul>
-  </nav>
+          <ul class="nav nav-pills float-right">
 
-  <div class="tab-content">
-    <div id="about" class="tab-pane fade in active">
-      <p>Welcome to my corner of the internet. I'm a recent graduate from the University of Toronto.</p>
-    </div>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about" data-toggle="tab">Home<span class="sr-only">(current)</span></a>
+            </li>
 
-    <div id="projects" class="tab-pane fade">
-      <p>Coming soon...</p>
-    </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" data-toggle="tab">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/eric-deng/">LinkedIn</a>
+            </li>
 
-    <div id="contact" class="tab-pane fade">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/deng-eric">GitHub</a>
+            </li>
 
-      <p> Here are some of my things</p>
+          </ul>
 
-        <a class="icon-title" href="https://ca.linkedin.com/in/eric-deng"><img class="icon linkedin" src="img/linkedin.png">
-        LinkedIn</a>
-        <h4></h4>
-        <a class="icon-title" href="https://github.com/deng-eric"><img class="icon github" src="img/github.png">Github</a>
-        <h4></h4>
-        <a class="icon-title" href="mailto:eric.deng@mail.utoronto.ca"><img class="icon mail" src="img/mail.png">email</a>
-    </div>
-  </div>
+        </nav>
+      </div>
 
-<script>
-$(document).ready(function(){
-    $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-    });
-});
-</script>
+      <div class="tab-content">
 
+        <div id="about" class="jumbotron tab-pane active">
+          <h1 class="display-3">Eric Deng</h1>
+          <p class="lead">Recent computer engineering grad from the University of Toronto.</p>
+        </div>
 
-</body>
+        <div id="projects" class="row projects tab-pane">
+          <div class="row projects">
+
+            <div class="col-lg-6">
+              <div class="card">
+                <h4 class="card-header">Subreddit Image Scrapper</h4>
+                <div class="card-body">
+                  <p class="card-text">Save all the images posted to a subreddit.</p>
+                  <br />
+                  <a class="btn btn-block btn-primary" href="https://github.com/deng-eric/reddit-image-bot" role="button">SAVE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card">
+                <h4 class="card-header">Supreme AutoFill</h4>
+                <div class="card-body">
+                  <p class="card-text">Automatically checkout the item you want from Supreme.</p>
+                  <a class="btn btn-block btn-primary" href="https://github.com/deng-eric/supreme-auto-fill" role="button">COP</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> 
+
+      <footer class="footer">
+        <p>:)</p>
+      </footer>
+
+    </div>  <!-- Container end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
 </html>

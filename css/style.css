@@ -1,114 +1,79 @@
-html, body {
-  height : 100%;
-  padding : 0;
-} 
-
-nav {
-  color:white;
-  background-color : rgba(0,0,0,1);
+/* Space out content a bit */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.affix {
-    top: 0;
-    width: 100%;
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.projects,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.affix + .container-fluid {
-    padding-top: 10px;
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
 }
 
-.invisible {
-  display : none;
-  width : 0px;
-  height : 0px;
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
 }
 
-.center-text {
-  margin : 0 auto;
-  text-align : center;
-  transition : color 0.5s ease;
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
 }
 
-.title {
-  color : #BBBBBB;
-  height : 75px;
+/* Main project message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: .75rem 1.5rem;
+  font-size: 1.5rem;
 }
 
-.icon {
-  width : 25px;
-  height :25px;
-  overflow :hidden;
-  float: left;
+/* Supporting project content */
+.project {
+  margin: 3rem 0;
+}
+.project p + h4 {
+  margin-top: 1.5rem;
 }
 
-.about {
-  color : #BBBBBB;
-  transition : color 0.2s ease;
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .project,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
 }
-
-.projects {
-  color : #BBBBBB;
-  transition : color 0.2s ease;
-}
-
-.contact {
-  color : #BBBBBB;
-  transition : color 0.2s ease;
-}
-
-.icon-title {
-  color : black ; 
-}
-
-.about:hover {
-  color : #FFFFFF;
-}
-
-.projects:hover {
-  color : #FFFFFF;
-}
-
-.contact:hover {
-  color : #FFFFFF;
-}
-
-.icon-title {
-  color : #FFFFFF ; 
-}
-
-.tab-content {
-  margin :10px;
-}
-
-.linkedin:hover {
-  opacity : 0.5;
-}
-
-.github:hover {
-  opacity : 0.5;
-}
-
-.mail:hover {
-  opacity : 0.5;
-}
-
-a {
-  text-decoration : none !important;
-}
-
-td {
-  padding-left : 20px;
-  padding-right : 20px;
-  padding-bottom : 5px;
-}
-
-.social-container {
-  margin: 4px auto;
-  text-align: left;
-}
-
-.contact-info {
-  padding : 5px;
-}
-
-
